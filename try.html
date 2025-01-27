@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherorNot</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            margin: auto;
+        }
+
+        h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        .description {
+            color: #7f8c8d;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+
+        .check-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .check-button:hover {
+            transform: translateY(-2px);
+        }
+
+        .location {
+            color: #2c3e50;
+            font-weight: bold;
+            margin: 20px 0;
+            font-size: 1.2rem;
+        }
+
+        .weather-info {
+            font-size: 2rem;
+            color: #e74c3c;
+            margin: 20px 0;
+        }
+
+        .warning-message {
+            color: #e74c3c;
+            margin: 20px 0;
+            padding: 15px;
+            background: #f8d7da;
+            border-radius: 10px;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .weather-info {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WeatherorNot</h1>
+        <h1>WeatherorNot</h1>
+        
+        <p class="description">
+            Check the weather in your area and determine if you
+            can go outside or stay at home for your own good.
+        </p>
+
+        <button class="check-button">Check Area</button>
+
+        <div class="location">
+            Current location: Delaware City
+        </div>
+
+        <div class="weather-info">IDK</div>
+
+        <div class="warning-message">
+            Upon scanning your location,you cannot go outside
+            for estimated 30 minutes until the rain stops.
+        </div>
+
+        <footer>
+            Developed by: LGA I @2025 All rights reserved
+        </footer>
+    </div>
+</body>
+</html>

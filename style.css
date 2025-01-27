@@ -1,0 +1,139 @@
+@font-face {
+    font-family: 'Helvetica';
+    src: url('fonts/helvetica.woff2') format('woff2'),
+         url('fonts/helvetica.woff') format('woff'),
+         url('fonts/helvetica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333030;
+
+}
+
+.navbar {
+    position: fixed; /* Fixes the navbar at the top-left corner */
+    top: 0;
+    left: 0;
+    width: 200px; /* Set a fixed width for the navbar */
+    height: auto; /* Adjust height based on content */
+    display: flex;
+    justify-content: flex-start; /* Align text to the left inside navbar */
+    align-items: center; /* Center text vertically within navbar */
+    padding: 10px; /* Add padding for spacing */
+    background-color: transparent; /* Invisible background */
+}
+
+.nav-text {
+    color: #FFFFFF; /* Text color */
+    font-size: 18px; /* Font size for nav text */
+}
+
+
+
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 5px; /* Space between elements */
+    width: 90%;
+    max-width: 600px; /* Maximum width for larger screens */
+}
+
+.content {
+    font-size: 70px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: #FFFFFF;
+    margin-top: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.spani{
+    color: #5B46F3;
+}
+
+.ornot{
+    color: #5B46F3;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.text {
+    color: #FFFFFF;
+    font-size: 32px;
+    padding: 20px;
+    text-align: center; /* Center the text */
+    border-radius: 8px;
+    max-width: 600px; /* Limit the width to control line breaks */
+    margin: 0 auto; /* Center the element horizontally */
+    word-wrap: break-word; /* Ensure long words break properly */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-style: oblique;
+    
+}
+
+.text2{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+    text-align: center; /* Center the text */
+    border-radius: 5px;
+    max-width: 1000px; /* Limit the width to control line breaks */
+    margin: 0 auto; /* Center the element horizontally */
+    word-wrap: break-word; /* Ensure long words break properly */
+    line-height: 1.4; /* Adjust line spacing for better readability */
+    margin-top: 0.5em;
+    margin-bottom: 1.3em; 
+    box-shadow: 0px 3px 1px 2px #000000, 0px 5px 10px 1px #000000;
+    font-style: oblique;
+}
+
+
+.btn {
+    background-color: #D9D9D9; /* Button color */
+    color: #000000; /* Text color */
+    font-family: Helvetica, Arial, sans-serif;
+    border-radius: 15px;
+    padding: 10px 20px;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 150px; /* Set a fixed width for the button */
+    margin: 0 auto;
+    box-shadow: -1px 6px 3px 0px #000000;
+
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+.textbox {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners */
+}
+
+footer {
+            margin-top: 40px;
+            color: #95a5a6;
+            font-size: 0.9rem;
+            justify-content: center;
+            text-align: center;
+        }
